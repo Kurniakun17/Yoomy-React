@@ -27,6 +27,10 @@ const RestaurantDetail = () => {
     console.log("aku mengupload makanan");
   }
 
+  function uploadMinuman() {
+    console.log("aku mengupload minuman");
+  }
+
   const handleFavorite = () => {
     const tempData =
       JSON.parse(localStorage.getItem("favoriteRestaurants")) || [];
@@ -42,7 +46,7 @@ const RestaurantDetail = () => {
         JSON.stringify([
           ...tempData.filter((restaurant) => restaurant.id !== data.id),
         ])
-      );
+      );``
     }
 
     setIsFavorite((prev) => !prev);
