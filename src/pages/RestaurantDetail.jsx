@@ -23,8 +23,8 @@ const RestaurantDetail = () => {
     setData(result.restaurant);
   };
 
-  function uploadMakanan(){
-    console.log("aku mengupload makanan")
+  function uploadMakanan() {
+    console.log("aku mengupload makanan");
   }
 
   const handleFavorite = () => {
